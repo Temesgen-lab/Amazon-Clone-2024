@@ -126,6 +126,7 @@
   overflow-y: scroll;
   height: 70vh;
   padding-bottom: 2rem;
+  z-index: 10;
 }
 
 .option {
