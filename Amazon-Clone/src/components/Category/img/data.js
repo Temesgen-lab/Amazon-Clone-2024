@@ -6,7 +6,7 @@ import catg2 from './category2.jpg'
 const catData = [
   { title: 'electronics', imageLink: catg1 },
   { title: "mens's clothing", imageLink: catg2 },
-  { title: "womne's clothing", imageLink: catg3 },
+  { title: "women's clothing", imageLink: catg3 },
   { title: 'jewelery', imageLink: catg4 }
 
 ];

@@ -4,7 +4,7 @@
   background-color: #fff;
   box-shadow: 0 0 10px #00000045;
     text-decoration: none;
-  width: 21%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,12 +26,13 @@
   .category_btn{
     text-decoration: none;
     align-self: flex-start;
-   color: #4242ffd0;
+   color: #3030f1;
+   font-size: 1.4rem;
   }
   .category_btn:hover{
     cursor: pointer;
-    color: #ff5c5c7e;
-    font-size: 1.6rem;
+    color: #CF693E;
+    
   }
 
   

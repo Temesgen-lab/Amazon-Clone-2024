@@ -12,9 +12,8 @@ function Category() {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: ' center',
-      background: 'transparent'
-
-
+      background: 'transparent',
+      marginBottom: '10rem'
     }}>
       {data.map((item) => (
         <CategoryCard title={item.title} imageLink={item.imageLink} />
