@@ -6,6 +6,7 @@ import SearchIcon from '@mui/icons-material/SearchOutlined';
 import DropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CartIcon from '@mui/icons-material/ShoppingCartOutlined';
 import LowerHeader from './LowerHeader';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isClicked, setClicked] = useState(false);
@@ -72,9 +73,9 @@ const Header = () => {
           </div>
           <div className={style.header_right}>
             <p className={`${style.outline_sm} ${style.header_nation}`}>EN<DropDownIcon /></p>
-            <p className={`${style.outline_sm} ${style.header_account}`}>Hello, sign in <span>account & lists<DropDownIcon /></span></p>
-            <p className={`${style.outline_sm} ${style.header_orders}`}>returns <span>& orders</span></p>
-            <p className={`${style.outline_sm} ${style.header_cart}`}><CartIcon /> cart <span className={style.cart_no}>0</span></p>
+            <Link to='/signIn' className={`${style.outline_sm} ${style.header_account}`}>Hello, sign in <span>account & lists<DropDownIcon /></span></Link>
+            <Link to='/orders' className={`${style.outline_sm} ${style.header_orders}`}>returns <span>& orders</span></Link>
+            <Link to='/cart' className={`${style.outline_sm} ${style.header_cart}`}><CartIcon /> cart <span className={style.cart_no}>0</span></Link>
           </div>
         </div>
       </div>

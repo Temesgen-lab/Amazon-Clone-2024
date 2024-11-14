@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import Home from './pages/Home/Home'
 
 import './App.css'
+import Routing from './Routing'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Home />
+      <Routing />
     </>
   )
 }
