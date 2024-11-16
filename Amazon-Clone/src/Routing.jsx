@@ -4,17 +4,21 @@ import Home from '../src/pages/Home/Home'
 import Order from './pages/Order/Order';
 import Cart from './pages/Cart/Cart';
 import Auth from './pages/Auth/Auth';
+import Results from './pages/Results/Results';
+import Layout from './components/Layout/Layout';
 
 function Routing() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/orders' element={<Order />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/signIn' element={<Auth />} />
-
+          <Route path='/' element={<Layout />}>
+            <Route path='/' element={<Home />} />
+            <Route path='/orders' element={<Order />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/signIn' element={<Auth />} />
+            <Route path='/category/:categoryName' element={<Results />} />
+          </Route>
         </Routes>
       </Router>
     </div>
