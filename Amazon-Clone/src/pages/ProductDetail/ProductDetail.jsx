@@ -37,6 +37,7 @@ function ProductDetail() {
             flex={true}
             desc={product.description}
             renderDesc={true}
+            renderAdd={true}
           />
         </div>
       ) : (

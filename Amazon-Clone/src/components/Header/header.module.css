@@ -5,7 +5,7 @@
   height: 10vh;
   color: #fff;
   /* background-color: #1a1a1a; */
-  background-image: linear-gradient(to right, #004234, #046B48);
+  background-image: linear-gradient(to right, #004234, #046b48);
 }
 
 .header_container {
@@ -106,7 +106,7 @@
   padding: 0.3rem 0.8rem;
   background-color: #7f1153;
 }
-.search_icon:hover{
+.search_icon:hover {
   cursor: pointer;
 }
 .drop_option {
@@ -153,7 +153,7 @@
   outline: none;
   background-color: #d4d4d4;
 }
-.header_ddw_btn:hover{
+.header_ddw_btn:hover {
   cursor: pointer;
 }
 
@@ -216,38 +216,44 @@
   color: #fff;
   text-decoration: none;
 }
-.cart_no{
+.cart_no {
   position: absolute;
   top: -5%;
   left: 20%;
   z-index: 2;
-  color:#ff9900;
+  color: #ff9900;
   font-weight: 700;
 }
-.lHeader_container{
+.lHeader_container {
   height: 7vh;
   background-color: #085749;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
 }
 
-.lHeader_container ul{
+.lHeader_container ul {
   display: flex;
   width: 40%;
-   justify-content: space-evenly;
-   list-style: none;
-   font-size: 1.4rem;
-   text-transform: capitalize;
-   align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  align-items: center;
 }
-.menu_icon{
+.menu_icon {
   display: flex;
   align-items: center;
   gap: 0.3rem;
 }
-.menu_icon svg{
+.menu_icon svg {
   font-size: 2.4rem;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
 }

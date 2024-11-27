@@ -17,14 +17,16 @@ function ProductCard({
   flex,
   desc,
   renderDesc,
+  renderAdd,
 }) {
   const [state, dispatch] = useContext(DataContext);
   function addToCart() {
     dispatch({
       type: Type.ADD_TO_BASKET,
-      item: { imgLink, title, price, rating, id },
+      item: { imgLink, title, price, rating, id, desc },
     });
   }
+
 
   return (
     <div className={`${style.product_box} ${flex ? style.flexed : ""}`}>
@@ -43,9 +45,15 @@ function ProductCard({
           {" "}
           <CurrencyFormatter price={price} />{" "}
         </p>
-        <button className={style.btn_add} onClick={addToCart}>
+
+        {renderAdd && <button
+          className={style.btn_add}
+          onClick={addToCart}
+          
+        >
           add to cart
-        </button>
+        </button> }
+        
       </div>
     </div>
   );

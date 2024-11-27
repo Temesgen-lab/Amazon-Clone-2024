@@ -33,6 +33,8 @@ function Product() {
               price={product.price}
               rating={product.rating}
               id={product.id}
+              desc={product.description}
+              renderAdd={true}
             />
           ))}
         </div>

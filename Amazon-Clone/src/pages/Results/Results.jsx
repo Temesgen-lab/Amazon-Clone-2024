@@ -43,7 +43,8 @@ function Results() {
                     price={product.price}
                     rating={product.rating}
                     id={product.id}
-                    renderDesc={true}
+                    desc={product.description}
+                    renderAdd={true}
                   />
                 </>
               );
