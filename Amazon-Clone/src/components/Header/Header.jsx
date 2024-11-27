@@ -117,8 +117,7 @@ const Header = () => {
               to="/cart"
               className={`${style.outline_sm} ${style.header_cart}`}
             >
-              <CartIcon /> cart{" "}
-              <span className={style.cart_no}>{state.basket.length}</span>
+              <CartIcon /> cart <span className={style.cart_no}>0</span>
             </Link>
           </div>
         </div>
