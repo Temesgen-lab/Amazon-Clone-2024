@@ -35,6 +35,8 @@ function ProductDetail() {
             rating={product?.rating}
             id={product?.id}
             flex={true}
+            desc={product.description}
+            renderDesc={true}
           />
         </div>
       ) : (

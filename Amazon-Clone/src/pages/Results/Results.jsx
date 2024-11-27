@@ -42,6 +42,8 @@ function Results() {
                     title={product.title}
                     price={product.price}
                     rating={product.rating}
+                    id={product.id}
+                    renderDesc={true}
                   />
                 </>
               );

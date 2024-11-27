@@ -69,17 +69,24 @@
   box-shadow: none;
   gap: 2rem;
   align-items: normal;
+  justify-content: flex-start;
 }
-.flexed img_box {
+.flexed .img_box {
   height: 100%;
+  max-width: 25%;
 }
 .flexed .btn_add {
   position: relative;
   display: block;
   bottom: 0;
   cursor: pointer;
+  width: 21%;
 }
 .flexed .card_lower {
   justify-content: flex-start;
   gap: 2rem;
+  align-items: flex-start;
 }
+/* .flexed .img {
+  max-width: 30%;
+} */

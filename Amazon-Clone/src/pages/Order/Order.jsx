@@ -1,14 +1,11 @@
-import React from 'react';
-
+import React from "react";
 
 function Order() {
   return (
     <div>
-
       <div>orders</div>
-
     </div>
-  )
+  );
 }
 
-export default Order
+export default Order;

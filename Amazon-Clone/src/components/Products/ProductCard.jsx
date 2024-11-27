@@ -6,7 +6,16 @@ import CurrencyFormatter from "../CurrencyFormat/CurrencyFormatter";
 import Rating from "@mui/material/Rating";
 import { Link } from "react-router-dom";
 
-function ProductCard({ imgLink, title, price, rating, id, flex }) {
+function ProductCard({
+  imgLink,
+  title,
+  price,
+  rating,
+  id,
+  flex,
+  desc,
+  renderDesc,
+}) {
   return (
     <div className={`${style.product_box} ${flex ? style.flexed : ""}`}>
       <Link to={`/products/${id}`} className={style.img_box}>
@@ -14,6 +23,7 @@ function ProductCard({ imgLink, title, price, rating, id, flex }) {
       </Link>
       <div className={style.card_lower}>
         <p className={style.title}>{title}</p>
+        {renderDesc && <div className={style.desc_box}>{desc}</div>}
         <p className={style.rating}>
           {" "}
           <Rating value={rating?.rate} precision={0.5} />
