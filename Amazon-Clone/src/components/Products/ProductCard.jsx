@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import style from "./product.module.css";
 
 import numeral from "numeral";
@@ -18,15 +18,38 @@ function ProductCard({
   desc,
   renderDesc,
   renderAdd,
+  amount,
 }) {
   const [state, dispatch] = useContext(DataContext);
+
   function addToCart() {
     dispatch({
       type: Type.ADD_TO_BASKET,
-      item: { imgLink, title, price, rating, id, desc },
+      item: {
+        imgLink,
+        title,
+        price,
+        rating,
+        id,
+        desc,
+        amount,
+      },
     });
   }
-
+  function removeFromCart() {
+    dispatch({
+      type: Type.REMOVE_FROM_BASKET,
+      item: {
+        imgLink,
+        title,
+        price,
+        rating,
+        id,
+        desc,
+        amount,
+      },
+    });
+  }
 
   return (
     <div className={`${style.product_box} ${flex ? style.flexed : ""}`}>
@@ -46,15 +69,19 @@ function ProductCard({
           <CurrencyFormatter price={price} />{" "}
         </p>
 
-        {renderAdd && <button
-          className={style.btn_add}
-          onClick={addToCart}
-          
-        >
-          add to cart
-        </button> }
-        
+        {renderAdd && (
+          <button className={style.btn_add} onClick={addToCart}>
+            add to cart
+          </button>
+        )}
       </div>
+      {!renderAdd && (
+        <div className={style.items_number}>
+          <button onClick={addToCart}>+</button>
+          <p>{amount}</p>
+          <button onClick={removeFromCart}>-</button>
+        </div>
+      )}
     </div>
   );
 }

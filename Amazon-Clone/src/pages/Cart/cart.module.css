@@ -1,0 +1,36 @@
+.cart_container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cart_right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #e4e4e4;
+  width: fit-content;
+}
+.cart_left {
+  justify-self: flex-start;
+  width: fit-content;
+  width: 70%;
+}
+.total_price {
+  display: flex;
+  gap: 2rem;
+}
+.gift_box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn_checkOut {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  background-color: #daa411;
+  padding: 0.5rem 3rem;
+  border-radius: 30px;
+}

@@ -88,6 +88,9 @@
   gap: 2rem;
   align-items: flex-start;
 }
-/* .flexed .img {
-  max-width: 30%;
-} */
+.items_number {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

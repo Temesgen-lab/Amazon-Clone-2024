@@ -33,6 +33,7 @@ const Header = () => {
     setClicked((prev) => !prev);
   }
   const [state, dispatch] = useContext(DataContext);
+
   return (
     <>
       <div className={`${isSticky ? style.sticky : ""}`}>
